@@ -1,17 +1,17 @@
-#Purpose
+# Purpose
 Query your google docs with LangChain, ChromaDB, and ChatGPT.
 
-#Credits
+# Credits
 I'm a JavaScript developer, not a Python developer. The python script for this project comes from this tutorial from Greg Baugues: https://www.haihai.ai/gpt-gdrive/. 
 
 However, I found the tutorial to be missing a few steps for those who are unfamiliar with Python (me), and wanted to improve it. 
 
 Additionally, I will be building a desktop app around the script using Eel and will keep that updated here.
 
-#Setup
+# Setup
 See the walkthrough here: https://www.haihai.ai/gpt-gdrive/.
 
-#Additional Setup Help
+# Additional Setup Help
 You will need to install Python on your computer: https://www.python.org/downloads/
 You will need to learn a bit about installing python packages and setting up your local dev environment.
 
@@ -37,7 +37,7 @@ You will need to give the program your secret OpenAI API key. Open up the termin
 setx OPENAI_API_KEY "your-api-key"
 You'll have to close the terminal instance and vs code and open them again before your program is able to use this info.
 
-#Have Some Fun
+# Have Some Fun
 Go ahead and expirement with the capabilities! By placing a .docx file in the folder you specified, you are giving your program access to it. Run your program in the termianal by typing "python 'your_program_file_name' " or clicking the play button in the upper right-hand corner in vs code.
 
 The script loads your docs from google docs, splits all the text files into smaller chunks, and then gives value to pieces of information based on the semantic meaning of the words and stores this in chromadb (a vector database).
